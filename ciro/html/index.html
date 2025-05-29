@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciro - Menú</title>
+  <link rel="stylesheet" type="text/css" href="css/ciro.css">
+</head>
+<body>
+  <script>
+    // acciones de botones
+    function mostrarPlato(idPlato) {
+      console.log("mostrar");
+      document.getElementById("inicio").style.display = "none";
+      document.getElementById("entradas").style.display = "none";
+      document.getElementById("principal").style.display = "none";
+      document.getElementById("postres").style.display = "none";
+      document.getElementById(idPlato).style.display = "block";
+    }
+    function mostrarInicio() {
+      console.log("inicio");
+      document.getElementById("entradas").style.display = "none";
+      document.getElementById("principal").style.display = "none";
+      document.getElementById("postres").style.display = "none";
+      document.getElementById("inicio").style.display = "block";
+    }
+  </script>
+
+
+  <header>
+    <button onclick="mostrarInicio()" class="logo" id="logo"></button>
+    <nav>
+      <button onclick="mostrarPlato('entradas')">Entradas</button>
+      <button onclick="mostrarPlato('principal')">Plato Principal</button>
+      <button onclick="mostrarPlato('postres')">Postres</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="inicio" id="inicio">
+      <img src="imagenes/cirop.jpeg" id="fotoinicio">
+      <p>Restaurante Ciro
+Ubicado en el corazón de Palermo, Ciro es un restaurante que combina lo clásico y lo moderno en un ambiente cálido y familiar. Su carta ofrece platos caseros con un toque gourmet, ideales para disfrutar en cualquier momento del día. Desde entradas crocantes y pastas caseras hasta postres irresistibles, Ciro invita a saborear cada comida como una experiencia única.
+</p>
+    </div>
+    <div class="dish" id="entradas">
+      <img src="imagenes/entrada.png" alt="Entradas" class="fotoplato"> 
+      <p>Entrada: Nuggets de Pollo con Papas Fritas
+Ideales para compartir o simplemente para darte un gusto, nuestras nuggets de pollo son doradas, crocantes y sabrosas. Acompañadas de papas fritas bien crujientes y salsas caseras, esta entrada es la opción perfecta para comenzar tu experiencia en Ciro con algo simple pero delicioso.
+      </p>
+    </div>
+    <div class="dish" id="principal">
+      <img src="imagenes/milanesafideos.png" alt="Plato Principal" class="fotoplato">
+      <p>Plato Principal: Milanesa con Fideos
+Un clásico que nunca falla. Nuestra milanesa casera, crocante por fuera y jugosa por dentro, se sirve acompañada de fideos al dente con salsa a elección. Una combinación simple, sabrosa y reconfortante que nos transporta directo a la mesa de casa, ahora también en Ciro.</p>
+    </div>
+    <div class="dish" id="postres">
+      <img src="imagenes/tortaoreo.png" alt="Postre" class="fotoplato">
+      <p>Una bomba de sabor en cada bocado. Esta torta comienza con una base húmeda de brownie, seguida por una generosa capa de dulce de leche. Encima, una capa de galletitas Oreo enteras y, para coronar, una crema suave mezclada con más Oreos. Ideal para los fanáticos del chocolate, el dulce y todo lo rico.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="logouces">
+      <img src="imagenes/logouces.png">
+    </div>
+    <div>María Emilia Viale</div>
+  </footer>
+</body>
+</html>
+

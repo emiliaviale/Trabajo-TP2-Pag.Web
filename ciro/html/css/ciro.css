@@ -1,0 +1,85 @@
+css
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fdf6ec;
+}
+
+header {
+  background-color: #1c2945;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+#fotoinicio {
+    width: 50%;
+
+}
+
+.logouces img {
+  width: 80px;
+}
+
+#logo {
+  font-size: 55px;
+  font-family: 'Brush Script MT', cursive;
+  margin-left: 20px;
+  background: url('../imagenes/cirologo.png') no-repeat;
+  height: 73px;
+  width: 94px;
+  background-size: 100%
+}
+
+nav button {
+  background: #fdf6ec;
+  border: none;
+  margin: 0 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav button:hover {
+  background-color: #ddd;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.dish {
+  text-align: center;
+}
+
+.dish img {
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#entradas {
+  display: none;
+}
+#principal {
+  display: none;
+}
+#postres {
+  display: none;
+}
+
+footer {
+  background-color: #1c2945;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
